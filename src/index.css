@@ -1,0 +1,147 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f7f7f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Default soft light background */
+  font-size: 16px;
+  transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+}
+
+body.background-one {
+  background-size: cover;
+  background-position: center;
+}
+
+body.background-two {
+  background-image: url('https://img.freepik.com/premium-vector/abstract-background-geometric-blue-green-wave-effect-with-memphis-background_586360-2484.jpg'); /* Example background 1 */
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light subtle text shadow */
+}
+
+.card {
+  background: #fff;
+  padding: 2.5em 3.5em;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  min-width: 320px;
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Slight floating effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #fff;
+  margin: 1em;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button.toggle {
+  background-color: #4CAF50; /* Soft green color */
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+button.toggle:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+button:active {
+  transform: translateY(1px); /* Slight press effect */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px solid #4CAF50; /* Focus outline with the same green */
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+p {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 1.5em;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+p.hidden {
+  opacity: 0; /* Smooth fade-out */
+}
+
+p.visible {
+  opacity: 1; /* Smooth fade-in */
+}
+
+/* Media query for light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #333;
+    background-color: #ffffff;
+  }
+  button.toggle {
+    background-color: #4CAF50; /* Soft green */
+  }
+  button:hover {
+    transform: translateY(-4px);
+  }
+  .card {
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+
+
